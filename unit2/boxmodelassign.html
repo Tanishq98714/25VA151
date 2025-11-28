@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make box</title>
+    <style>
+        div{
+            margin:0px;
+            box-sizing: border-box;
+            border: 2px solid rgb(59, 181, 218);
+            height: 880px;
+            width: 400px;
+            display:flex;
+        }
+        #main{
+            display: flex;
+            height: 220px;
+            width: 800px;
+            border: 2px solid rgb(218, 59, 181);
+            background-color: rgb(28, 28, 1);
+            display: flex;
+            align-items: top;
+            justify-content: center;
+
+            gap: 10px;          
+
+
+        }
+        .box{
+            border: 2px solid rgb(249, 198, 254);
+            height: 220px;
+            width: 880px;
+            margin-right: 20px;
+            
+        }
+        .box:nth-child(1)
+        {
+           
+            background-color: lightseagreen;
+        }
+        .box:nth-child(even)
+        {
+            background-color: lightcoral;
+        }
+        .box:nth-child(2)
+        {
+            width: 400px;
+            height: 100px;
+            display: flex;
+        }
+        .box:nth-child(3)
+        {
+            width: 400px;
+            height: 100px;
+            display: flex;
+             
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+    
+</body>
+</html> 
