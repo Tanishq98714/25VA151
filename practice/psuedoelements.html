@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Elemenets</title>
+    <style>
+        p::first-line {
+            color:orchid;
+            text-shadow: 5px violet;
+            font-size: large;
+            font-family: cursive;
+        }
+        p::first-letter {
+            color:orange;
+            font-size: large;
+            font-family: fantasy;
+            text-shadow: 3px 3px 5px red;
+        }
+        p::after {
+            content : url(https://media.tenor.com/Km11GYbvYY0AAAAM/good-morning.gif);
+        }
+        p::before {
+            content: url(https://media.tenor.com/C0mP_I660_0AAAAm/cat-dance.webp);
+        }
+        ::marker {
+            color :aqua ;
+            type : square;
+        }
+    </style>
+</head>
+<body>
+    <div id="ab">
+       <p>They did not live in the same city. Not even on the same continent.
+The two of them were not only miles apart but also as diff erent as day
+and night. Their lifestyles were so dissimilar that it seemed impossible
+for them to bear each other’s presence, never mind fall in love. But it
+happened. And it happened fast, so fast in fact that Ella had no time to
+realize what was happening and to be on guard, if one could ever be on
+guard against love.
+Love came to Ella as suddenly and brusquely as if a stone had been
+hurled from out of nowhere into the tranquil pond of her life.</p>
+    </div>
+    <br>
+    <ul>
+        <li>::first-line Selector</li>
+        <li>::first-letter Selector</li>
+        <li>::before Selector</li>
+        <li>::after Selector</li>   
+    </ul>
+</body>
+</html>
