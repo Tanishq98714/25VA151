@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation & Layout Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            display: inline-block;
+            padding: 8px 12px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        
+        .inline-demo span {
+            display: inline; 
+            background: lightyellow;
+            padding: 4px;
+        }
+
+    
+        .block-demo div {
+            display: block;
+            background: lightblue;
+            margin: 5px 0;
+            padding: 8px;
+        }
+
+    
+        .float-box {
+            width: 45%;
+            padding: 10px;
+            background: peachpuff;
+            float: left;
+            margin: 10px;
+        }
+
+    
+        .clear-section {
+            clear: both;
+            background: lightgreen;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Navigation Menu (Block Elements)</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Inline Example</h2>
+    <div class="inline-demo">
+        <span>This is inline 1</span>
+        <span>This is inline 2</span>
+        <span>This is inline 3</span>
+    </div>
+
+    <h2>Block Example</h2>
+    <div class="block-demo">
+        <div>Block Element 1</div>
+        <div>Block Element 2</div>
+        <div>Block Element 3</div>
+    </div>
+
+    <h2>Float Example</h2>
+    <div class="float-box">This box is floated left.</div>
+    <div class="float-box">This box is also floated left.</div>
+
+    <div class="clear-section">
+        This section uses <b>clear: both</b> so it appears below the floated boxes.
+    </div>
+
+</body>
+</html>
