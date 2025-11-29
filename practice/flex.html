@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            box-sizing : border-box ;
+        }
+        #tth {
+            display:    flex;
+            flex-wrap : wrap;
+
+        }
+       
+        #tth div{
+            border: 5px solid purple;
+            flex-basis : 50%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        #tth div.right {
+            flex-basis: 95%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="tth">
+<div>LeFT</div>
+<div>center</div>
+<div>Right</div>
+<div>Right</div>
+<div>Right</div>
+<div>Right</div>
+<div>Right</div>
+</div>
+</body>
+</html>
