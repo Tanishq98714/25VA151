@@ -1,189 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive E-commerce Navbar</title>
+    <meta charset="UTF-8">
+    <title>ID Profile Card</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
+        main {
+            background-color: white;
+            width: 800px;
+            height: 400px;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+        }
 
-    body {
-      background: #f5f5f5;
-    }
+        .aa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background-color: brown;
+            padding: 10px;
+            color: white;
+        }
 
-    /* NAVBAR */
-    .navbar {
-      background: #111827;
-      color: #ffffff;
-      padding: 0.8rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
+        .cc {
+            width: 50px;
+            height: 50px;
+        }
 
-    /* LOGO / BRAND */
-    .nav-logo {
-      font-weight: 700;
-      font-size: 1.3rem;
-      letter-spacing: 0.03em;
-    }
+        .bb {
+            text-align: center;
+            font-family: cursive;
+            font-size: small;
+            background-color: brown;
+            color: white;
+            padding: 5px;
+        }
 
-    /* LINKS */
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1.2rem;
-    }
+        .content {
+            display: flex;
+            flex: 1;
+            padding: 15px;
+        }
 
-    .nav-links a {
-      text-decoration: none;
-      color: #e5e7eb;
-      font-size: 0.95rem;
-      padding-bottom: 2px;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.2s, color 0.2s;
-    }
+        .left {
+            flex: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-    .nav-links a:hover {
-      color: #ffffff;
-      border-color: #f97316;
-    }
+        .hh {
+            display: flex;
+            gap: 10px;
+            font-size: 16px;
+        }
 
-    .nav-links a.active {
-      color: #f97316;
-      border-color: #f97316;
-    }
+        .right {
+            flex: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-    /* SEARCH */
-    .nav-search {
-      flex: 1;
-      max-width: 320px;
-    }
+        .cat {
+            width: 120px;
+            height: 150px;
+            border: 2px solid black;
+        }
 
-    .nav-search input {
-      width: 100%;
-      padding: 0.45rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid #4b5563;
-      background: #020617;
-      color: #f9fafb;
-      font-size: 0.9rem;
-      outline: none;
-    }
-
-    .nav-search input::placeholder {
-      color: #9ca3af;
-    }
-
-    .nav-search input:focus {
-      border-color: #f97316;
-      box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.3);
-    }
-
-    /* ICONS */
-    .nav-icons {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      font-size: 1.2rem;
-    }
-
-    .icon-btn {
-      border: none;
-      background: transparent;
-      color: #e5e7eb;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .cart-badge {
-      position: absolute;
-      top: -4px;
-      right: -6px;
-      background: #f97316;
-      color: #fff;
-      font-size: 0.6rem;
-      border-radius: 999px;
-      padding: 0 4px;
-    }
-
-    /* ---------- RESPONSIVE PART ---------- */
-
-    @media (max-width: 768px) {
-      .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-      }
-
-      .nav-logo {
-        width: 100%;
-      }
-
-      .nav-search {
-        order: 3;
-        width: 100%;
-        max-width: none;
-        margin-top: 0.5rem;
-      }
-
-      .nav-links {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        order: 2;
-      }
-
-      .nav-icons {
-        order: 1;
-      }
-    }
-
-    /* Just some page content */
-    main {
-      padding: 1.5rem;
-    }
-  </style>
+        .id-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-  <header class="navbar">
-    <div class="nav-logo">ShopMate</div>
-
-    <ul class="nav-links">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">Deals</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-
-    <div class="nav-search">
-      <input type="text" placeholder="Search for products..." />
+<main>
+    <div class="aa">
+        <img src="https://college4u.in/wp-content/uploads/2018/03/abes.png" class="cc">
+        <h2>ABES Engineering College<br>College Course (032)</h2>
     </div>
 
-    <div class="nav-icons">
-      <button class="icon-btn" aria-label="Cart">
-        🛒
-        <span class="cart-badge">2</span>
-      </button>
-      <button class="icon-btn" aria-label="Account">
-        👤
-      </button>
+    <div class="bb">
+        19th KM Stone, NH-09, Ghaziabad-201009, UP, India<br>
+        Ph-0120-7135112, 9999889341, Fax-0120-7135115<br>
+        Email: info@abes.ac.in | Website: www.abes.ac.in
     </div>
-  </header>
 
-  <main>
-    <h2>Responsive Navbar Demo</h2>
-    <p>Resize the browser window to see how the navbar layout changes.</p>
-  </main>
+    <div class="content">
+        <!-- LEFT DATA -->
+        <div class="left">
+            <div class="hh"><b>NAME :</b> Tanishq Choudhary</div>
+            <div class="hh"><b>ADMISSION NO :</b> 2025B15310217</div>
+            <div class="hh"><b>COURSE & SECTION :</b> AIML - 03</div>
+            <div class="hh"><b>PHONE NO :</b> 9871464743</div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="right">
+            <div class="id-title">ID CARD</div>
+            <img src="https://i.pinimg.com/736x/bb/00/fb/bb00fbabd0a58d0bc918cb8bd5664837.jpg" class="cat">
+        </div>
+    </div>
+</main>
 
 </body>
 </html>
