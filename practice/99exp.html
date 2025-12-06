@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            padding: 10px;
+            color: white;   
+
+            
+        }
+        main {
+            background-color:rgb(144, 231, 202)
+            display : grid;
+            grid-template-columns:auto;
+            max-width : fit-content;
+            margin:auto;
+            border: 2px solid white;
+            border-radius : 5px;
+            column-gap : 20px;
+            row-gap: 20px;
+
+        }
+        .aa{
+            font-size: large;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+        .bb {
+            display:grid;
+            grid-template-columns:auto auto auto auto auto;
+            padding : 20px ;
+            column-gap : 30px;
+            grid-column-start:1;
+            grid-column-end:2;
+            background-color: rgb(248, 184, 245);
+            color: black;
+        }
+        .cc {
+            display : gird ;
+            grid-template-rows: auto auto auto ;
+            column-gap: normal;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .dd {
+            display:gird;
+            grid-template-columns:auto auto auto auto ;
+            column-gap: 10px;
+            grid-column-start: 1;   
+            grid-column-end: 2;
+            padding : 20px;
+            display: inline;
+        }
+        .ee {
+            width: 90px;
+            height: 70px;
+            
+        }
+
+        </style>  
+
+</head>
+<body>
+<main>
+    <div class="aa">responsive web page</div>
+    <div class="bb">
+        <div>HOME</div>
+        <div>ABOUT</div>
+        <div>SERVICES</div> 
+        <div><input type="textarea" value="SeARCH" ></div>
+        <div>CONTACT</div>
+    </div>
+    <div class="cc">
+        <div>Filter</div>
+        <div>Sort</div>
+        <div>Price</div>
+    </div>
+    <div class="dd">
+        <div><img src="https://i.pinimg.com/736x/88/46/d7/8846d7c375b9d517605e0b607a0ee841.jpg" alt="b" class="ee">   </div>
+        <div><input type="button" value="Add ">     </div>
+        <div><img src="https://i.pinimg.com/736x/88/46/d7/8846d7c375b9d517605e0b607a0ee841.jpg" alt="b" class="ee">   </div>
+        <div><input type="button" value="Add ">     </div>
+        <div><img src="https://i.pinimg.com/736x/88/46/d7/8846d7c375b9d517605e0b607a0ee841.jpg" alt="b" class="ee">   </div>
+        <div><input type="button" value="Add ">     </div>
+        <div><img src="https://i.pinimg.com/736x/88/46/d7/8846d7c375b9d517605e0b607a0ee841.jpg" alt="b" class="ee">   </div>
+        <div><input type="button" value="Add ">     </div>
+    </div>
+</main>
+    
+</body>
+</html>
