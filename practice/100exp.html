@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        main {
+            display : flex ;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #aa {
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-basis : 15.67%;
+            color: white;
+            gap : 10px;
+            border: 2px solid black;
+            
+        }
+        .bb {
+            text-align: center;
+            flex-basis : 15.67%;
+            color: white;
+            gap : 10px;
+            border: 2px solid black;
+            
+        }
+        .cc {
+            padding: 10px;
+        }
+        @media only screen and (max-width: 850px) {
+            .bb {
+                flex-direction: column;
+                flex-basis: 100%;
+                border-bottom: 1px solid black;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="aa">
+            <div class="bb">HOME</div>
+            <div class="bb">Category</div>
+            <div class="bb"><input type="text-area" value="Search">    </div>
+            <div class="bb">SALE</div>
+            <div class="bb">CART</div>
+            <div class="bb">ACCOUNT</div>
+
+
+        </div>
+        <div class="cc">
+            <h1>Welcome to our Website</h1>
+            <p>This is a sample webpage to demonstrate media queries in CSS. Resize the browser window to see how the layout changes based on the screen size.</p>
+        </div>
+    </main>
+</body>
+</html>
