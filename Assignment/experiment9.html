@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Shop Grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            padding:12px;
+            background-color: rgb(150, 210, 240);
+        }
+
+        .wrapper{
+            background-color: rgb(250, 200, 225);
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+            margin:auto;
+            max-width: fit-content;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        .top-title{
+            font-size: large;
+            text-transform: uppercase;
+            grid-column: 1 / 3;
+            padding-left: 20px;
+        }
+
+        .menu-bar{
+            grid-column: 1 / 3;
+            padding:20px;
+            display:grid;
+            grid-template-columns: repeat(6, auto);
+            background-color: black;
+            color: white;
+        }
+
+        .menu-bar div{
+            text-align: center;
+        }
+
+        .menu-bar div:hover{
+            border-bottom: 2px solid white;
+        }
+
+        .shop-layout{
+            display:grid;
+            grid-template-columns: repeat(5, auto);
+            column-gap: 10px;
+            grid-column: 1 / 3;
+        }
+
+        .filter-panel{
+            padding-left: 20px;
+            grid-column: 1 / 2;
+        }
+
+        .filter-panel p{
+            display: inline;
+        }
+
+        .filter-panel h2{
+            border-top:1px solid black;
+            font-size:15px;
+        }
+
+        .filter-panel h1{
+            font-size:20px;
+        }
+
+        .product-row{
+            grid-column: 2 / 6;
+            display:grid;
+            grid-template-columns: repeat(3, auto);
+            column-gap: 5px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .card{
+            border:1px solid black;
+            border-radius: 3px;
+            padding-bottom: 20px;
+        }
+
+        img{
+            width:300px;
+            height:300px;
+        }
+
+        button{
+            background-color: lightgray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="wrapper">
+
+        <div class="top-title">
+            <h1>Responsive Product Grid</h1>
+        </div>
+
+        <nav class="menu-bar">
+            <div><img src="https://99bookstores.com/cdn/shop/files/logo.jpg?v=1697545206&width=75" style="width:30px;height:30px;"></div>
+            <div>Home</div>
+            <div>Products</div>
+            <div><input type="search" placeholder="Search items"></div>
+            <div>Login</div>
+            <div>Cart</div>
+        </nav>
+
+        <section class="shop-layout">
+
+            <aside class="filter-panel">
+                <h1>Filters</h1>
+                <h2>Category</h2>
+                <input type="checkbox">
+                <p>Prices</p>
+            </aside>
+
+            <div class="product-row">
+                <div class="card">
+                    <img src="https://99bookstores.com/cdn/shop/files/91Q4lLuogQL._SL1500.jpg?v=1700726221&width=533">
+                    <h4>The Forty Rules of Love</h4>
+                    <p>$5</p>
+                    <button>Add To Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://99bookstores.com/cdn/shop/files/39994fe3-32d2-45ff-8f2a-d74b37c44e75.jpg?v=1698387461">
+                    <h4>The Kite Runner</h4>
+                    <p>$6</p>
+                    <button>Add To Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://99bookstores.com/cdn/shop/files/91nWla_vLXL._SL1500.jpg?v=1716365811&width=533">
+                    <h4>The Bastard of Istanbul</h4>
+                    <p>$8</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="product-row">
+                <div class="card">
+                    <img src="https://99bookstores.com/cdn/shop/files/91qx01XrIcL._SL1500.jpg?v=1719582453&width=533">
+                    <h4>The Architect Apprentice</h4>
+                    <p>$5</p>
+                    <button>Add To Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://99bookstores.com/cdn/shop/files/81XsuEyoGQL._SL1500.jpg?v=1716923798&width=533">
+                    <h4>The Island of Missing Tree</h4>
+                    <p>$8</p>
+                    <button>Add To Cart</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://99bookstores.com/cdn/shop/files/913r_gSG_SL._SL1500.jpg?v=1719582547&width=533">
+                    <h4>Honour</h4>
+                    <p>$4</p>
+                    <button>Add To Cart</button>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+</body>
+</html>
