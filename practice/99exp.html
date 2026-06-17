@@ -22,8 +22,9 @@
         .aa  {
             font-size:large ;
             text-transform: uppercase;
-            text-align: center;
+         
             padding: 20px ;
+            justify-content: center;
         }
         .bb {
             display: grid ;
@@ -53,13 +54,17 @@
         @media only screen and (max-width: 850px) {
             .bb {
                 grid-template-columns: auto  ;
+                justify-content: center;
+                align-items: center;
             }
             .dd {
                 grid-template-columns: auto ;
+                align-items: center;
             }
             .tt {
                 height: 75px;
                 width: 75px;
+                align-items: center;
             }
         }
     </style>
